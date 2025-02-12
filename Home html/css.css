@@ -30,7 +30,7 @@ nav a {
     font-weight: bold;
 }
 .active {
-    background-color: red;
+    background-color: rgb(105, 17, 17);
     padding: 5px 10px;
     border-radius: 5px;
     color: white;
@@ -50,7 +50,7 @@ nav a {
     color: white;
 }
 .btn {
-    background-color: red;
+    background-color: rgb(105, 17, 17);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -68,9 +68,40 @@ nav a {
     border-radius: 10px;
 }
 .about-text {
-    background-color: red;
+    background-color: rgb(105, 17, 17);
     padding: 20px;
     border-radius: 10px;
     margin-left: 20px;
     width: 50%;
 }
+
+.team h2{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-left: 40%;
+}
+
+.team team-member img{
+    display: flexbox;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border: 1px solid black;
+}
+
+.team team-member h3{
+    display: flexbox;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(105, 17, 17);
+    border: 1px solid rgb(105, 17, 17);
+}
+
+.team team-member p{
+    display: flexbox;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
