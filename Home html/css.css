@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fffdfd;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+header h2{
+    color: black;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.active {
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.hero {
+    position: relative;
+    text-align: left;
+    padding: 50px;
+    background: url('judo.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+}
+.btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+.about {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+.about img {
+    width: 50%;
+    border-radius: 10px;
+}
+.about-text {
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 50%;
+}
