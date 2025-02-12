@@ -1,0 +1,98 @@
+<nav class="albora navbar navbar-expand-md navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+  
+      <a class="navbar-brand" routerLink="/home">
+        <img style="max-width:50px" src="LOGIN\LOGITO.jpg" alt="logo">
+      </a>
+   
+  
+      <button class="navbar-toggler" style="background-color: #996211;" type="button" aria-controls="navbarContent"
+        [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+  
+      <div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+  
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/products" style="color:aliceblue">Cervezas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/categories" style="color:aliceblue">Categorías</a>
+          </li>
+          <!-- @if(isAdmin) {
+          <li class="nav-item">
+  
+            <a class="nav-link" routerLink="/products/create" style="color:aliceblue">Crear Producto</a>
+  
+          </li>
+          } -->
+          @if(isAdmin) {
+          <li class="nav-item">
+  
+            <a class="nav-link active" aria-current="page" routerLink="/users" style="color:aliceblue">Usuarios</a>
+  
+          </li>
+  
+              <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/orders" style="color:aliceblue">Pedidos</a>
+          </li>
+          
+        
+        
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/visits" style="color:aliceblue">Visitas</a>
+            </li>
+            >
+          }
+  
+        
+             
+          <!-- @if(isAdmin) {
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/categories/create" style="color:aliceblue">Crear Categoría</a>
+  
+          </li>
+          } -->
+         
+         
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/conocenos" style="color:aliceblue">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/contactanos" style="color:aliceblue">Contacto</a>
+          </li>
+          @if (isLoggedIn){
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/products" style="color:aliceblue">Comprar <i class="bi-cart4"></i></a>
+          </li>
+        }
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/visitas" style="color:aliceblue">Fábrica <i class="bi bi-buildings"></i></a>
+          </li>
+  
+          
+          @if(userEmail) {
+          <button [routerLink]="['/users/detalle']" class="register btn btn-outline-danger btn-sm mx-3">{{userEmail}}</button>
+         
+          }
+          @if(isLoggedIn) {
+          <button type="button" class="btn btn-danger ms-2" (click)="logout()">
+            Cerrar sesión
+            <i class="bi bi-box-arrow-right ms-2"></i></button>
+          } @else {
+          <button type="button" class="login btn btn-outline-secondary ms-2" routerLink="/login">
+            Iniciar sesión
+            <i class="bi bi-box-arrow-up ms-2"></i>
+          </button>
+          <button type="button" class="register btn btn-outline-danger ms-2" routerLink="/register">
+            Registro
+            <i class="bi bi-person-plus ms-2"></i>
+          </button>
+          }
+        </ul>
+      </div>
+    </div>
+  
+  </nav>

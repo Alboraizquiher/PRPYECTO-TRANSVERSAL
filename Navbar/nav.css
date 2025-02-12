@@ -1,0 +1,21 @@
+
+.albora{
+    background-color: black !important; 
+}
+
+
+.login{
+    background-color: #937016 !important;
+    border-color: #937016;
+    margin-left: 25px;
+    color:aliceblue
+
+}
+
+.register{
+    background-color: black !important;
+    border-color: hwb(43 9% 42%) !important;
+    color:#937016;
+ 
+
+}
