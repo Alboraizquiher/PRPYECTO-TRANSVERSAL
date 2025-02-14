@@ -123,15 +123,15 @@ header nav a.active::after {
     background-position: center;
     height: 50%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
 }
 
 .about-text {
     width: 50%;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -148,6 +148,7 @@ header nav a.active::after {
 .app-download {
     display: flex;
     padding: 50px;
+    justify-content: center;
     align-items: center;
     background-color: #000000;
     color: white;
@@ -186,7 +187,7 @@ header nav a.active::after {
     display: flex;
     padding: 50px;
     color: black;
-    text-align: center;
+    justify-content: right;
 }
 
 .donde-estamos h3{
