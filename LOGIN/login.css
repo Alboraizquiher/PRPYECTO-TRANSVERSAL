@@ -65,28 +65,40 @@ header nav a.active::after {
 .hero h1 {
     font-size: 3em;
     margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Formulario de registro */
-.form-container {
+.div .form-container {
     display: flex;
-    justify-content: center;
+    background-color: #000000;
+    background-size: cover;
+    justify-content: space-between;
     align-items: center;
-    height: calc(100vh - 200px); /* Altura del viewport menos la altura del hero */
-    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    
 }
 
 form {
-    background-color: #ffffff;
+    display: flex;
+    background-color:black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+    align-items: center;
 }
 
 form h2 {
     margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
 }
 
 form input[type="text"],
@@ -102,20 +114,6 @@ form input[type="date"] {
 form label {
     display: block;
     margin: 10px 0;
-}
-
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
 }
 
 a.btn {
