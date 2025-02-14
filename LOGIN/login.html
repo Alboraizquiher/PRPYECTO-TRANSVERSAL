@@ -1,20 +1,16 @@
-<?php
-session_start();
-//mirar como hacerlo con cualquier correo 
-$usuarios = [
-    "usuario@example.com" => "123456",
-    "1234567890" => "abcdef"
-];
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST['usuario']; //  correo o teléfono
-    $password = $_POST['password'];
-    
-    if (isset($usuarios[$usuario]) && $usuarios[$usuario] === $password) {
-        $_SESSION['usuario'] = $usuario;
-        echo "<h2>Ha iniciado sesion </h2>";
-    } else {
-        echo "<h2>Correo, teléfono o contraseña incorrectos</h2>";
-    }
-}
-?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <h2>Iniciar Sesión</h2>
+    <form action="login.php" method="POST">
+        <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+    </form>
+</body>
+</html>
