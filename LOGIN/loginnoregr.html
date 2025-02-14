@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h2>Registro</h2>
+    <form action="registro.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" required>
+        <input type="date" name="fecha_nacimiento" required>
+        <label><input type="radio" name="genero" value="Hombre" required> Hombre</label>
+        <label><input type="radio" name="genero" value="Mujer" required> Mujer</label>
+        <label><input type="radio" name="genero" value="Otro" required> Otro</label>
+        <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>
+
