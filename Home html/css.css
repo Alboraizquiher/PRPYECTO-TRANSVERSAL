@@ -20,13 +20,24 @@ header h2 {
 }
 
 header nav a {
-    color: rgb(0, 0, 0);
+    position: relative; 
+    color: black;
     text-decoration: none;
     margin: 0 10px;
+    padding: 10px 0; 
 }
 
-header nav a.active {
+header nav a.active::after {  
+    content: ''; 
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 10px; 
+    height: 10px; 
+    background-color: #7e0000; 
     font-weight: bold;
+    border-radius: 5px; 
 }
 
 /* Hero section*/
@@ -57,34 +68,6 @@ header nav a.active {
     display: inline-block;
 }
 
-/* Sobre nosotros section */
-.about {
-    display: flex;
-    padding: 90px;
-    align-items: center;
-    background-color: black;
-}
-
-.about img {
-    width: 50%;
-    margin-right: 20px;
-}
-
-.about-text {
-    width: 50%;
-    background-color: #7e0000;
-    color: white;
-}
-
-.about-text h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    margin: 10px 0;
-}
-
 /* Equipo section */
 .team {
     padding: 50px;
@@ -98,6 +81,8 @@ header nav a.active {
     margin-bottom: 40px;
     color: white;
     font-weight: bold;
+    border-radius: 5px;
+    padding: 3%;
 }
 
 .team-member {
@@ -105,6 +90,7 @@ header nav a.active {
     width: 30%;
     margin: 0 1.5%;
     vertical-align: top;
+    border-radius: 5px;
     
 }
 
@@ -115,16 +101,19 @@ header nav a.active {
 
 .team-member h3 {
     font-size: 1.5em;
-    margin: 10px 0;
+    padding: 10%;
     background-color: #7e0000;
     color: white;
+    border-radius: 5px;
 }
 
 .team-member p {
     font-size: 0.9em;
+    padding: 10%;
     color: #666;
     background-color: white;
     color: black;
+    border-radius: 5px;
 }
 
 /* Contacto section */
