@@ -70,35 +70,25 @@ header nav a.active::after {
 }
 
 /* Formulario de registro */
-.div .form-container {
+.form-container {
     display: flex;
-    background-color: #000000;
-    background-size: cover;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    
+    height: calc(100vh - 200px); /* Altura del viewport menos la altura del hero */
+    background-color: #ffffff;
 }
 
 form {
-    display: flex;
-    background-color:black;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-    align-items: center;
 }
 
 form h2 {
     margin-bottom: 20px;
-    background-color: black;
-    color: white;
-    background-size: cover;
-    align-items: center;
-    text-align: center;
 }
 
 form input[type="text"],
@@ -116,11 +106,25 @@ form label {
     margin: 10px 0;
 }
 
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e0000; /* Fondo rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5e0000;
+}
+
 a.btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #7e0000;
+    background-color: #7e0000; /* Fondo rojo */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -129,4 +133,20 @@ a.btn {
 
 a.btn:hover {
     background-color: #5e0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    margin: 10px 0;
 }

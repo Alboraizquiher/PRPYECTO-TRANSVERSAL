@@ -65,15 +65,22 @@ header nav a.active::after {
 .hero h1 {
     font-size: 3em;
     margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Formulario de registro */
 .form-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Ajusta la disposición de los elementos */
     align-items: center;
     height: calc(100vh - 200px); /* Altura del viewport menos la altura del hero */
     background-color: #ffffff;
+}
+
+/* Ocultar el "Registro" duplicado */
+.form-container h2 {
+    display: none;
 }
 
 form {
@@ -83,10 +90,6 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-}
-
-form h2 {
-    margin-bottom: 20px;
 }
 
 form input[type="text"],
@@ -107,7 +110,7 @@ form label {
 form button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #7e0000; /* Fondo rojo */
     color: white;
     border: none;
     border-radius: 5px;
@@ -115,5 +118,46 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #5e0000;
+}
+
+/* Estilos para los botones */
+a.btn {
+    display: block; /* Para que se muestre en línea con el formulario */
+    width: 100%; /* Asegura que el botón tenga el mismo ancho que los inputs */
+    padding: 10px;
+    background-color: #7e0000; /* Fondo rojo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Separación entre los botones */
+.login-btn {
+    margin-bottom: 10px; /* Añade espacio debajo del botón "INICIAR SESIÓN" */
+}
+
+.register-btn {
+    margin-top: 10px; /* Añade espacio arriba del botón "Registrarse" */
+}
+
+a.btn:hover {
+    background-color: #5e0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    margin: 10px 0;
 }
