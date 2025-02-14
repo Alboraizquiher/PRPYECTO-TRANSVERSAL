@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="../Home html/css.css">
 </head>
 <body>
-    <h2>Registro</h2>
-    <form action="registro.php" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="text" name="apellido" placeholder="Apellido" required>
-        <input type="date" name="fecha_nacimiento" required>
-        <label><input type="radio" name="genero" value="Hombre" required> Hombre</label>
-        <label><input type="radio" name="genero" value="Mujer" required> Mujer</label>
-        <label><input type="radio" name="genero" value="Otro" required> Otro</label>
-        <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Registrarse</button>
-    </form>
+    <header>
+        <!--Cabezera-->
+        <div class="logo-container">
+            <img src="logoDS.png" alt="Logo" class="logo">
+            <h2>DojoSearch</h2>
+        </div>
+        <nav>
+            <a href="../Home html/html.html">HOME</a>
+            <a href="#">NOSOTROS</a>
+            <a href="#">EVENTOS</a>
+            <a href="#">EQUIPO</a>
+            <a href="#">CONTACTO</a>
+            <a href="loginnoregr.html" class="active">PERFIL</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Registro</h1>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h2>Registro</h2>
+        <form action="registro.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellido" placeholder="Apellido" required>
+            <input type="date" name="fecha_nacimiento" required>
+            <label><input type="radio" name="genero" value="Hombre" required> Hombre</label>
+            <label><input type="radio" name="genero" value="Mujer" required> Mujer</label>
+            <label><input type="radio" name="genero" value="Otro" required> Otro</label>
+            <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <a href="login.html" class="btn">INICIAR SESIÓN</a>
+    </div>
 </body>
 </html>
-

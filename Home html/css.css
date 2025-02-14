@@ -15,8 +15,19 @@ header {
     color: rgb(0, 0, 0);
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 10px;
+}
+
 header h2 {
     margin: 0;
+    font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
 }
 
 header nav a {

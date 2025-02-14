@@ -1,20 +1,31 @@
+<!-- filepath: /c:/xampp2.0/htdocs/GitHub/PRPYECTO-TRANSVERSAL/LOGIN/registro.php -->
 <?php
-session_start();
-//mirar como hacerlo con cualquier correo 
-$usuarios = [
-    "usuario@example.com" => "123456",
-    "1234567890" => "abcdef"
-];
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = $_POST['usuario']; //  correo o teléfono
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $fecha_nacimiento = $_POST['fecha_nacimiento'];
+    $genero = $_POST['genero'];
+    $usuario = $_POST['usuario'];
     $password = $_POST['password'];
-    
-    if (isset($usuarios[$usuario]) && $usuarios[$usuario] === $password) {
-        $_SESSION['usuario'] = $usuario;
-        echo "<h2>Ha iniciado sesion </h2>";
-    } else {
-        echo "<h2>Correo, teléfono o contraseña incorrectos</h2>";
+
+    // Aquí puedes agregar la lógica para guardar los datos en la base de datos
+    // Por ejemplo, conectar a la base de datos y ejecutar una consulta SQL
+
+    // Ejemplo de conexión a la base de datos y consulta SQL
+    $conn = new mysqli("localhost", "root", "", "nombre_de_tu_base_de_datos");
+
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
     }
+
+    $sql = "INSERT INTO usuarios (nombre, apellido, fecha_nacimiento, genero, usuario, password) VALUES ('$nombre', '$apellido', '$fecha_nacimiento', '$genero', '$usuario', '$password')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Registro exitoso";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
 }
 ?>

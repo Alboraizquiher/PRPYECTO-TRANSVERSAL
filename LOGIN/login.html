@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="login" href="login.css">
     <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="../Home html/css.css">
 </head>
 <body>
-    <h2>Iniciar Sesión</h2>
-    <form action="login.php" method="POST">
-        <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Ingresar</button>
-    </form>
-    <p>¿No tienes una cuenta? <a href="loginnoregr.html">Regístrate aquí</a></p>
+    <header>
+        <!--Cabezera-->
+        <div class="logo-container">
+            <img src="../Home html/logoDS.png" alt="Logo" class="logo">
+            <h2>DojoSearch</h2>
+        </div>
+        <nav>
+            <a href="../Home html/html.html">HOME</a>
+            <a href="#">NOSOTROS</a>
+            <a href="#">EVENTOS</a>
+            <a href="#">EQUIPO</a>
+            <a href="#">CONTACTO</a>
+            <a href="login.html" class="active">PERFIL</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Iniciar Sesión</h1>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <a href="loginnoregr.html" class="btn">REGISTRARSE</a>
+    </div>
 </body>
 </html>

@@ -117,18 +117,3 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
-
-a.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #7e0000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-}
-
-a.btn:hover {
-    background-color: #5e0000;
-}
