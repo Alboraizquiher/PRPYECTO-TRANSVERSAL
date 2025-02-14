@@ -1,107 +1,220 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fffdfd;
+    color: #000000;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
+    padding: 20px;
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
 }
 
-header h2{
-    color: black;
+header h2 {
+    margin: 0;
 }
-nav a {
-    margin: 0 10px;
+
+header nav a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    color: black;
+    margin: 0 10px;
+}
+
+header nav a.active {
     font-weight: bold;
 }
-.active {
-    background-color: rgb(105, 17, 17);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
-}
+
+/* Hero section*/
 .hero {
-    position: relative;
-    text-align: left;
-    padding: 50px;
-    background: url('judo.jpg') no-repeat center center/cover;
+    background-image: url('foto-inicio.jpeg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
     height: 400px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
+
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3em;
     margin: 0;
-    color: white;
 }
-.btn {
-    background-color: rgb(105, 17, 17);
+
+.hero .btn {
+    background-color: #7e0000;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
     display: inline-block;
-    margin-top: 10px;
 }
+
+/* Sobre nosotros section */
 .about {
+    display: flex;
+    padding: 90px;
+    align-items: center;
+    background-color: black;
+}
+
+.about img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.about-text {
+    width: 50%;
+    background-color: #7e0000;
+    color: white;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin: 10px 0;
+}
+
+/* Equipo section */
+.team {
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.team h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: top;
+    
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    background-color: #7e0000;
+    color: white;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #666;
+    background-color: white;
+    color: black;
+}
+
+/* Contacto section */
+.contact {
+    background-image: url('contactanos.jpg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.about-text {
+    width: 50%;
+    color: black;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin: 10px 0;
+}
+
+/* Descargar aplicación section */
+.app-download {
     display: flex;
     padding: 50px;
     align-items: center;
-}
-.about img {
-    width: 50%;
-    border-radius: 10px;
-}
-.about-text {
-    background-color: rgb(105, 17, 17);
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 20px;
-    width: 50%;
-}
-
-.team h2{
-    background-color: black;
-    border: 1px solid black;
+    background-color: #000000;
     color: white;
-    margin-left: 40%;
 }
 
-.team team-member img{
-    display: flexbox;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    border: 1px solid black;
+.app-download div {
+    width: 50%;
+    align-items: center;
 }
 
-.team team-member h3{
-    display: flexbox;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: rgb(105, 17, 17);
-    border: 1px solid rgb(105, 17, 17);
+.app-download h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-.team team-member p{
-    display: flexbox;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+.app-download p {
+    margin: 10px 0;
+    align-items: center;
 }
 
+.app-download button {
+    background-color: #7e0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Donde estamos*/
+.donde-estamos{
+    background-image: url('donde-estamos.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 50px;
+    color: black;
+    text-align: center;
+}
+
+.donde-estamos h3{
+    align-items: right;
+}
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    margin: 10px 0;
+}
