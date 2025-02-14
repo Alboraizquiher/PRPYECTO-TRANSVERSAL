@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DojoSearch</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -73,7 +74,27 @@
     </div>
     <div class="donde-estamos">
         <!--donde etsamos (mapa de fondo)-->
+<<<<<<< Updated upstream
         <h3>¿DONDE ESTAMOS?</h3>
+=======
+        <div class="container">
+            <div class="barra">
+                <h3>¿DONDE ESTAMOS?</h3>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            // mapa Barcelona
+            var map = L.map('map').setView([41.3874, 2.1686], 13); 
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+            L.marker([41.3874, 2.1686]).addTo(map)
+                .bindPopup('Barcelona, España')
+                .openPopup();
+        </script>
+>>>>>>> Stashed changes
     </div>
     <div class="footer">
         <h3>MANTENTE INFORMADO</h3>
