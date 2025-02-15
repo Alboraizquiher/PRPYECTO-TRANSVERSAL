@@ -6,6 +6,7 @@
     <title>DojoSearch</title>
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" type="image/png" href="logoDS.png">
 </head>
 <body>
     <header>
@@ -23,7 +24,6 @@
             <a href="../LOGIN/login.html">PERFIL</a>
         </nav>
     </header>   
-
     <section class="hero">
         <!--Parte inicial (imagen de fondo)-->
         <div>
@@ -31,7 +31,18 @@
             <a href="foto-inicio.jpeg" class="btn">SIENTE LAS ARTES MARCIALES</a>
         </div>
     </section>
-    
+    <div class="about">
+        <div class="image">
+        <!--sobre nosotros (imagen al lado derecho -> aplicar flexbox)-->
+        <img src="sobre-nosotros.jpg" alt="foto-inicio">
+        </div>
+        <div class="text">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Ayudamos a nuestros clientes a adentrarse en el <br> mundo de las Artes Marciales.</p><br><br>
+            <p>Tenemos acceso a los mejores eventos junto a los <br>mejores maestros del momento.</p><br><br>
+            <p>Disponemos de muchas disciplinas desde combates cuerpo a <br>cuerpo hasta uso de las técnicas del Ninjitsu.</p>
+        </div>
+    </div>
     <div class="team">
         <!--conoce al equipo (en columnas cada uno del profesor (imagen -> nombre -> informacion))-->
         <h2>CONECE AL EQUIPO</h2>
@@ -91,7 +102,6 @@
                 .bindPopup('Barcelona, España')
                 .openPopup();
         </script>
->>>>>>> Stashed changes
     </div>
     <div class="footer">
         <h3>MANTENTE INFORMADO</h3>

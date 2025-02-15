@@ -27,11 +27,7 @@ header {
 
 header h2 {
     margin: 0;
-<<<<<<< Updated upstream
     font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
-=======
-
->>>>>>> Stashed changes
 }
 
 header nav a {
@@ -39,35 +35,56 @@ header nav a {
     color: black;
     text-decoration: none;
     margin: 0 10px;
-<<<<<<< Updated upstream
     padding: 10px 0; 
-=======
-    
->>>>>>> Stashed changes
 }
 header nav a:hover {
     color: darkgray; 
   }
 
-header nav a.active::after {  
-    content: ''; 
-    position: absolute;
-    bottom: 0; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 10px; 
-    height: 10px; 
+header nav a.active {  
     background-color: #7e0000; 
     font-weight: bold;
-<<<<<<< Updated upstream
-    border-radius: 5px; 
-=======
-    background-color: #7e0000;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10%;
->>>>>>> Stashed changes
+}
+/* Sobre nosotros section */
+.about {
+    display: flex;
+    padding: 90px;
+    align-items: center;
+    background-color: black;
+    gap: 10px; /* Reduce el espacio entre imagen y texto */
+    max-width: 900px;
+    width: 100%; 
+
 }
 
+.about img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.text {
+    background-color: #8b0000;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
 /* Hero section*/
 .hero {
     background-image: url('foto-inicio.jpeg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
