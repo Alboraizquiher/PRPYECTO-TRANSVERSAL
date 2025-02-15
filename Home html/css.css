@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
     background-color: #fffefe;
     color: rgb(0, 0, 0);
 }
@@ -27,48 +27,30 @@ header {
 
 header h2 {
     margin: 0;
-<<<<<<< Updated upstream
     font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
-=======
-
->>>>>>> Stashed changes
 }
 
 header nav a {
-    position: relative; 
     color: black;
     text-decoration: none;
     margin: 0 10px;
-<<<<<<< Updated upstream
-    padding: 10px 0; 
-=======
-    
->>>>>>> Stashed changes
+    padding: 10px 0;
 }
-header nav a:hover {
-    color: darkgray; 
-  }
 
-header nav a.active::after {  
-    content: ''; 
+header nav a.active::after {
+    content: '';
     position: absolute;
-    bottom: 0; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 10px; 
-    height: 10px; 
-    background-color: #7e0000; 
-    font-weight: bold;
-<<<<<<< Updated upstream
-    border-radius: 5px; 
-=======
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
     background-color: #7e0000;
-    padding: 10px;
-    border-radius: 10%;
->>>>>>> Stashed changes
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-/* Hero section*/
+/* Hero section */
 .hero {
     background-image: url('foto-inicio.jpeg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
     background-size: cover;
@@ -85,9 +67,6 @@ header nav a.active::after {
     font-size: 3em;
     margin: 0;
 }
-.hero h1:hover {
-    color: darkgray; 
-  }
 
 .hero .btn {
     background-color: #7e0000;
@@ -122,7 +101,6 @@ header nav a.active::after {
     margin: 0 1.5%;
     vertical-align: top;
     border-radius: 5px;
-    
 }
 
 .team-member img {
@@ -158,16 +136,12 @@ header nav a.active::after {
     align-items: center;
     color: white;
     text-align: center;
-    display: flex;
-    border-radius: 20px;
 }
 
 .about-text {
     width: 50%;
     color: white;
     text-align: center;
-    padding: 20px;
-    border-radius: 20px;
 }
 
 .about-text h2 {
@@ -177,7 +151,6 @@ header nav a.active::after {
 
 .about-text p {
     margin: 10px 0;
-    line-height: 1.5;
 }
 
 /* Descargar aplicación section */
@@ -215,8 +188,8 @@ header nav a.active::after {
     cursor: pointer;
 }
 
-/*Donde estamos*
-.donde-estamos{
+/*Donde estamos*/
+.donde-estamos {
     background-image: url('donde-estamos.png');
     background-size: cover;
     background-position: center;
@@ -226,42 +199,22 @@ header nav a.active::after {
     justify-content: right;
 }
 
-.donde-estamos h3{
+.donde-estamos h3 {
     align-items: right;
-}*/
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #000000;
-}
-.barra {
-    width: 250px;
-    padding: 20px;
-    background-color: #000000;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.container h3{
-    color: #fffefe;
 }
 
-#map {
-    height: 500px;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 10px;
-}
 /* Footer */
 .footer {
     background-color: #000000;
     color: white;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
- 
 
+.footer h3 {
+    margin: 0;
+}
 
+.footer p {
+    margin: 10px 0;
+}

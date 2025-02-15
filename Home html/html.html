@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="ens">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DojoSearch</title>
     <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -15,14 +14,13 @@
             <h2>DojoSearch</h2>
         </div>
         <nav>
-            <a href="#" class="active">HOME</a>
-            <a href="#">NOSOTROS</a>
+            <a><button class="red-button">HOME</button></a>
             <a href="#">EVENTOS</a>
             <a href="#">EQUIPO</a>
             <a href="#">CONTACTO</a>
-            <a href="../LOGIN/login.html">PERFIL</a>
+            <a href="../LOGIN/login.html">PERFIL</a> <!-- Ruta corregida -->
         </nav>
-    </header>   
+    </header>
 
     <section class="hero">
         <!--Parte inicial (imagen de fondo)-->
@@ -74,24 +72,7 @@
     </div>
     <div class="donde-estamos">
         <!--donde etsamos (mapa de fondo)-->
-        <div class="container">
-            <div class="barra">
-                <h3>¿DONDE ESTAMOS?</h3>
-            </div>
-            <div id="map"></div>
-        </div>
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script>
-            // mapa Barcelona
-            var map = L.map('map').setView([41.3874, 2.1686], 13); 
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-            L.marker([41.3874, 2.1686]).addTo(map)
-                .bindPopup('Barcelona, España')
-                .openPopup();
-        </script>
->>>>>>> Stashed changes
+        <h3>¿DONDE ESTAMOS?</h3>
     </div>
     <div class="footer">
         <h3>MANTENTE INFORMADO</h3>
