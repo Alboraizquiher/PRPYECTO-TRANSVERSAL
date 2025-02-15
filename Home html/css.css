@@ -34,9 +34,14 @@ header nav a {
     color: black;
     text-decoration: none;
     margin: 0 10px;
+<<<<<<< HEAD
     padding: 10px 0;
+=======
+    padding: 10px 0; 
+>>>>>>> 31ec856f013c071d752e42f85a5556571f066c7f
 }
 
+<<<<<<< HEAD
 header nav a.active::after {
     content: '';
     position: absolute;
@@ -51,6 +56,53 @@ header nav a.active::after {
 }
 
 /* Hero section */
+=======
+header nav a.active {  
+    background-color: #7e0000; 
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10%;
+}
+/* Sobre nosotros section */
+.about {
+    display: flex;
+    padding: 90px;
+    align-items: center;
+    background-color: black;
+    gap: 10px; /* Reduce el espacio entre imagen y texto */
+    max-width: 900px;
+    width: 100%; 
+
+}
+
+.about img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.text {
+    background-color: #8b0000;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/* Hero section*/
+>>>>>>> 31ec856f013c071d752e42f85a5556571f066c7f
 .hero {
     background-image: url('foto-inicio.jpeg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
     background-size: cover;
