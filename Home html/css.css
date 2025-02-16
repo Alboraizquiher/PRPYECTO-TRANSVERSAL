@@ -34,14 +34,10 @@ header nav a {
     color: black;
     text-decoration: none;
     margin: 0 10px;
-<<<<<<< HEAD
     padding: 10px 0;
-=======
-    padding: 10px 0; 
->>>>>>> 31ec856f013c071d752e42f85a5556571f066c7f
+    position: relative;
 }
 
-<<<<<<< HEAD
 header nav a.active::after {
     content: '';
     position: absolute;
@@ -56,58 +52,9 @@ header nav a.active::after {
 }
 
 /* Hero section */
-=======
-header nav a.active {  
-    background-color: #7e0000; 
-    font-weight: bold;
-    padding: 20px;
-    border-radius: 10%;
-}
-/* Sobre nosotros section */
-.about {
-    display: flex;
-    padding: 90px;
-    align-items: center;
-    background-color: black;
-    gap: 10px; /* Reduce el espacio entre imagen y texto */
-    max-width: 900px;
-    width: 100%; 
-
-}
-
-.about img {
-    width: 400px;
-    height: auto;
-    border-radius: 20px;
-}
-
-.text {
-    background-color: #8b0000;
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 400px;
-    text-align: left;
-}
-
-.text h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.text p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-/* Hero section*/
->>>>>>> 31ec856f013c071d752e42f85a5556571f066c7f
 .hero {
-    background-image: url('foto-inicio.jpeg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,153 +67,68 @@ header nav a.active {
     margin: 0;
 }
 
-.hero .btn {
-    background-color: #7e0000;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
+/* Formulario de registro */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Altura del viewport menos la altura del hero */
+    background-color: #ffffff;
 }
 
-/* Equipo section */
-.team {
-    padding: 50px;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-.team h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 3%;
-}
-
-.team-member {
-    display: inline-block;
-    width: 30%;
-    margin: 0 1.5%;
-    vertical-align: top;
-    border-radius: 5px;
-}
-
-.team-member img {
-    width: 100%;
+form {
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
-}
-
-.team-member h3 {
-    font-size: 1.5em;
-    padding: 10%;
-    background-color: #7e0000;
-    color: white;
-    border-radius: 5px;
-}
-
-.team-member p {
-    font-size: 0.9em;
-    padding: 10%;
-    color: #666;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-}
-
-/* Contacto section */
-.contact {
-    background-image: url('contactanos.jpg'); /* Cambiar 'hero-image.jpg' por la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 
-.about-text {
-    width: 50%;
-    color: white;
-    text-align: center;
-}
-
-.about-text h2 {
-    font-size: 2em;
+form h2 {
     margin-bottom: 20px;
 }
 
-.about-text p {
+form input[type="text"],
+form input[type="password"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
     margin: 10px 0;
 }
 
-/* Descargar aplicación section */
-.app-download {
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
     color: white;
-}
-
-.app-download div {
-    width: 50%;
-    align-items: center;
-}
-
-.app-download h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.app-download p {
-    margin: 10px 0;
-    align-items: center;
-}
-
-.app-download button {
-    background-color: #7e0000;
-    color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/*Donde estamos*/
-.donde-estamos {
-    background-image: url('donde-estamos.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    padding: 50px;
-    color: black;
-    justify-content: right;
+form button:hover {
+    background-color: #45a049;
 }
 
-.donde-estamos h3 {
-    align-items: right;
-}
-
-/* Footer */
-.footer {
-    background-color: #000000;
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7e0000;
     color: white;
-    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
     text-align: center;
 }
 
-.footer h3 {
-    margin: 0;
-}
-
-.footer p {
-    margin: 10px 0;
+a.btn:hover {
+    background-color: #5e0000;
 }
