@@ -30,26 +30,64 @@ header h2 {
     font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
 }
 
-header nav a {
-    color: black;
-    text-decoration: none;
-    margin:  10px;
-    padding: 10px ;
-    position: relative;
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+    display: none;
+    background-color: #7e0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+.menu-icon {
+    display: none;
+    background-color: #7e0000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
 
-header nav a.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: #7e0000;
-    font-weight: bold;
-    border-radius: 5px;
-}
+
 
 /* Hero section */
 .hero {
