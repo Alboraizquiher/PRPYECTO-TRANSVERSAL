@@ -44,9 +44,9 @@ header h2 {
 
 /* Menú de navegación */
 header nav {
-    display: flex;
+   
     align-items: center;
-    gap: 20px;
+    gap: 20%;
 }
 
 /* Botón rojo en la navegación (HOME) */
