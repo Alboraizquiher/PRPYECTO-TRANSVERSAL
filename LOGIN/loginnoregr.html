@@ -13,13 +13,14 @@
             <img src="../Home html/logoDS.png" alt="Logo" class="logo">
             <h2>DojoSearch</h2>
         </div>
-        <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav-menu">
             <a href="../Home html/html.html">HOME</a>
-            <a href="#">NOSOTROS</a>
             <a href="#">EVENTOS</a>
             <a href="#">EQUIPO</a>
             <a href="#">CONTACTO</a>
-            <a href="loginnoregr.html" class="active">PERFIL</a>
+            <a href="login.html" class="active">PERFIL</a>
         </nav>
     </header>
 
@@ -30,7 +31,7 @@
     </section>
 
     <div class="form-container">
-        <h2>Registro</h2>
+        
         <form action="registro.php" method="POST">
             <input type="text" name="nombre" placeholder="Nombre" required>
             <input type="text" name="apellido" placeholder="Apellido" required>
@@ -42,7 +43,7 @@
             <input type="password" name="password" placeholder="Contraseña" required>
             <button type="submit" class="btn">Registrarse</button>
         </form>
-        <a href="login.html" class="btn">INICIAR SESIÓN</a>
+       
     </div>
     <div class="footer">
         <h3>MANTENTE INFORMADO</h3>

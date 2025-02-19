@@ -38,17 +38,54 @@ header nav a {
     position: relative;
 }
 
-header nav a.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
     background-color: #7e0000;
-    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
     border-radius: 5px;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
 
 /* Hero section */
@@ -59,7 +96,8 @@ header nav a.active::after {
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    text-align: center;
+    margin-bottom: 10%;
+  
 }
 
 .hero h1 {
@@ -71,16 +109,12 @@ header nav a.active::after {
 
 /* Formulario de registro */
 .form-container {
+    
     display: flex;
-    flex-direction: column; /* Ajusta la disposición de los elementos */
+    justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px); /* Altura del viewport menos la altura del hero */
+    
     background-color: #ffffff;
-}
-
-/* Ocultar el "Registro" duplicado */
-.form-container h2 {
-    display: none;
 }
 
 form {
@@ -89,6 +123,18 @@ form {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    text-align: center;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form h2 {
+   
+    margin-bottom: 20px;
+}
+.h2prueba{
+    margin-top: 10%;
     text-align: center;
 }
 
@@ -121,25 +167,15 @@ form button:hover {
     background-color: #5e0000;
 }
 
-/* Estilos para los botones */
 a.btn {
-    display: block; /* Para que se muestre en línea con el formulario */
-    width: 100%; /* Asegura que el botón tenga el mismo ancho que los inputs */
-    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #7e0000; /* Fondo rojo */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-}
-
-/* Separación entre los botones */
-.login-btn {
-    margin-bottom: 10px; /* Añade espacio debajo del botón "INICIAR SESIÓN" */
-}
-
-.register-btn {
-    margin-top: 10px; /* Añade espacio arriba del botón "Registrarse" */
 }
 
 a.btn:hover {

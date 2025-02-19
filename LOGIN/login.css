@@ -113,6 +113,7 @@ header nav a {
     align-items: center;
     color: rgb(0, 0, 0);
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .hero h1 {
@@ -129,7 +130,7 @@ header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(75vh - 200px); /* Altura del viewport menos la altura del hero */
+    
     background-color: #ffffff;
 }
 
@@ -162,7 +163,7 @@ form input[type="date"] {
 }
 
 form label {
-    display: block;
+    
     margin: 10px 0;
 }
 
@@ -197,6 +198,7 @@ a.btn:hover {
 
 /* Footer */
 .footer {
+    margin-top: 10%;
     background-color: #000;
     color: #fff;
     padding: 20px;
