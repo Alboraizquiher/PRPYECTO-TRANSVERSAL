@@ -30,18 +30,19 @@ header h2 {
     font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
 }
 
-
+header nav a {
+    color: black;
+    text-decoration: none;
+    margin:  10px;
+    padding: 10px ;
+    position: relative;
+}
+/* Estilos para el botón de menú */
 /* Estilos para el botón de menú */
 .menu-toggle {
     display: none;
-    background-color: #7e0000;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.5em;
 }
+
 .menu-icon {
     display: none;
     background-color: #7e0000;
@@ -50,15 +51,17 @@ header h2 {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.5em;
-    position: absolute;
+   
     top: 20px;
     right: 20px;
 }
+
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 20%;
+    
 }
+
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -86,8 +89,20 @@ header h2 {
         display: block;
     }
 }
+/* Botón rojo en la navegación (HOME) */
+.red-button {
+    background-color: #7e0000; /* Color rojo */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
 
-
+.red-button:hover {
+    background-color: #5e0000;
+}
 
 /* Hero section */
 .hero {
@@ -110,11 +125,11 @@ header h2 {
 
 /* Formulario de registro */
 .form-container {
-    margin-top: -15%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px); /* Altura del viewport menos la altura del hero */
+    height: calc(75vh - 200px); /* Altura del viewport menos la altura del hero */
     background-color: #ffffff;
 }
 
@@ -182,16 +197,18 @@ a.btn:hover {
 
 /* Footer */
 .footer {
-    background-color: #000000;
-    color: white;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     text-align: center;
+    
 }
 
 .footer h3 {
-    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
 .footer p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
