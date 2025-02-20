@@ -1,6 +1,24 @@
-<!-- filepath: /c:/xampp2.0/htdocs/GitHub/PRPYECTO-TRANSVERSAL/LOGIN/registro.php -->
+<!--
+ filepath: /c:/xampp2.0/htdocs/GitHub/PRPYECTO-TRANSVERSAL/LOGIN/registro.php -->
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$server = '';
+$username = 'root';
+$password = '';
+$db = 'ejemplo';
+
+$login = new mysqli($server, $username, $password, $db);
+if ($conexion->connect_error) {
+    die('Error en la conexión' . $conexion->connect_error);
+}else{
+
+    echo 'Conexión exitosa';
+}
+    
+
+?>
+
+
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $fecha_nacimiento = $_POST['fecha_nacimiento'];
@@ -27,5 +45,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $conn->close();
-}
-?>
+}-->
