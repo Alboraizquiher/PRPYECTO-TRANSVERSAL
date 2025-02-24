@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
     <header>
         <!--Cabezera-->
         <div class="logo-container">
-            <img src="../Home html/logoDS.png" alt="Logo" class="logo">
+            <img src="../Home html/IMG/logoDS.png" alt="Logo" class="logo">
             <h2>DojoSearch</h2>
         </div>
         <!-- AÑADO BOTON PARA RESPONSIVE-->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav class="nav-menu">
-            <a href="../Home html/html.html">HOME</a>
+            <a href="../Home html/HTML/html.html">HOME</a>
             <a href="#">EVENTOS</a>
             <a href="#">EQUIPO</a>
             <a href="#">CONTACTO</a>
-            <a href="login.html" class="active">PERFIL</a>
+            <a href="HTML/login.html" class="active">PERFIL</a>
         </nav>
     </header>
 
@@ -32,7 +32,7 @@
     </section>
     
     <div class="form-container">
-        <form action="login.php" method="POST">
+        <form action="HTML/login.php" method="POST">
             <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
             <input type="password" name="password" placeholder="Contraseña" required>
             <button type="submit" class="btn">Ingresar</button>
