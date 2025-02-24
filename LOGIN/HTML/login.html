@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="/LOGIN/CSS/login.css">
+    
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
             <a href="#">EVENTOS</a>
             <a href="#">EQUIPO</a>
             <a href="#">CONTACTO</a>
-            <a href="HTML/login.html" class="active">PERFIL</a>
+            <a href="LOGIN/HTML/login.html" class="active">PERFIL</a>
         </nav>
     </header>
 
@@ -32,11 +33,11 @@
     </section>
     
     <div class="form-container">
-        <form action="HTML/login.php" method="POST">
+        <form action="LOGIN/PHP/login.php" method="POST">
             <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
             <input type="password" name="password" placeholder="Contraseña" required>
             <button type="submit" class="btn">Ingresar</button>
-            <a href="loginnoregr.html" class="btn">REGISTRARSE</a>
+            <a href="LOGIN/HTML/loginnoregr.html" class="btn">REGISTRARSE</a>
         </form>
     </div>
     <div class="footer">
