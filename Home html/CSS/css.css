@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fffefe;
+    
     color: #000;
 }
 
@@ -43,12 +43,15 @@ header h2 {
 }
 
 /* Menú de navegación */
+
 header nav a {
+    
     color: black;
     text-decoration: none;
     margin:  10px;
     padding: 10px ;
     position: relative;
+
 }
 /* Estilos para el botón de menú */
 /* Estilos para el botón de menú */
@@ -70,6 +73,8 @@ header nav a {
 }
 
 .nav-menu {
+   
+
     display: flex;
     align-items: center;
     
@@ -77,21 +82,23 @@ header nav a {
 
 @media (max-width: 768px) {
     .nav-menu {
+        color: white;
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
-        top: 60px;
+        top: 12%;
         left: 0;
         padding: 10px 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        
     }
 
     .nav-menu a {
         padding: 10px 20px;
         width: 100%;
         text-align: left;
+        color: #fff;
     }
 
     .menu-toggle:checked + .menu-icon + .nav-menu {
@@ -121,11 +128,11 @@ header nav a {
    HERO SECTION
 ---------------------- */
 .hero {
-    background-image: url(foto-inicio.jpeg);
+    background-image: url("/Home html/IMG/foto-inicio.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 70vh; /* Ajusta la altura */
+    height: 80vh; /* Ajusta la altura */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +141,11 @@ header nav a {
 }
 
 .hero h1 {
-    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    font-size: 4em;
     margin-bottom: 20px;
 }
 
@@ -239,7 +250,7 @@ header nav a {
    CONTACT SECTION
 ---------------------- */
 .contact {
-    background-image: url(contactanos.jpg);
+    background-image: url("/Home html/IMG/contactanos.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -248,7 +259,10 @@ header nav a {
     text-align: center;
 }
 
-.contact-text h2 {
+
+
+
+h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
