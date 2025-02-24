@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DojoSearch>
+    <Eventos>
+        <Evento id="1">
+            <Nombre>Torneo Internacional de Karate</Nombre>
+            <Fecha>2025-06-15</Fecha>
+            <Ubicacion>
+                <Ciudad>Madrid</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>50</Precio>
+                    <Disponibles>100</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>20</Precio>
+                    <Disponibles>250</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Asociación Española de Karate</Nombre>
+                    <Contacto>karate@dojo.com</Contacto>
+                </Promotor>
+                <Promotor id="2">
+                    <Nombre>Federación de Muay Thai</Nombre>
+                    <Contacto>muaythai@dojo.com</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Marca Deportiva XYZ</Patrocinador>
+        </Evento>
+        <Evento id="2">
+            <Nombre>Campeonato de Muay Thai</Nombre>
+            <Fecha>2025-07-20</Fecha>
+            <Ubicacion>
+                <Ciudad>Madrid</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>100</Precio>
+                    <Disponibles>10</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>20</Precio>
+                    <Disponibles>250</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Asociación Española de Karate</Nombre>
+                    <Contacto>karate@dojo.com</Contacto>
+                </Promotor>
+                <Promotor id="2">
+                    <Nombre>Federación de Muay Thai</Nombre>
+                    <Contacto>muaythai@dojo.com</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Gimnasio Elite Fighters</Patrocinador>
+        </Evento>
+        <Evento id="3">
+            <Nombre>Campeonato Nacional de Jiu-Jitsu</Nombre>
+            <Fecha>2025-06-15</Fecha>
+            <Ubicacion>
+                <Ciudad>Barcelona</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>120</Precio>
+                    <Disponibles>15</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>25</Precio>
+                    <Disponibles>300</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Federación Española de Jiu-Jitsu</Nombre>
+                    <Contacto>contacto@jiujitsu.es</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Academia Gracie España</Patrocinador>
+        </Evento>
+
+        <Evento id="4">
+            <Nombre>Torneo Internacional de Taekwondo</Nombre>
+            <Fecha>2025-08-10</Fecha>
+            <Ubicacion>
+                <Ciudad>Sevilla</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>150</Precio>
+                    <Disponibles>20</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>30</Precio>
+                    <Disponibles>400</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Asociación Mundial de Taekwondo</Nombre>
+                    <Contacto>info@taekwondo.org</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Club Taekwondo Sevilla</Patrocinador>
+        </Evento>
+
+        <Evento id="5">
+            <Nombre>Open de Kickboxing</Nombre>
+            <Fecha>2025-09-05</Fecha>
+            <Ubicacion>
+                <Ciudad>Valencia</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>90</Precio>
+                    <Disponibles>10</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>15</Precio>
+                    <Disponibles>200</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Federación Española de Kickboxing</Nombre>
+                    <Contacto>contacto@kickboxing.es</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Gimnasio Fighters Pro</Patrocinador>
+        </Evento>
+    </Eventos>
+</DojoSearch>
