@@ -30,6 +30,7 @@
             </Promotores>
             <Patrocinador>Marca Deportiva XYZ</Patrocinador>
         </Evento>
+
         <Evento id="2">
             <Nombre>Campeonato de Muay Thai</Nombre>
             <Fecha>2025-07-20</Fecha>
@@ -59,6 +60,7 @@
             </Promotores>
             <Patrocinador>Gimnasio Elite Fighters</Patrocinador>
         </Evento>
+        
         <Evento id="3">
             <Nombre>Campeonato Nacional de Jiu-Jitsu</Nombre>
             <Fecha>2025-06-15</Fecha>
