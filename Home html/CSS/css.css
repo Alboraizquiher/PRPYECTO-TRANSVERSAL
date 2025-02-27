@@ -82,11 +82,13 @@ header nav a {
 
 @media (max-width: 768px) {
     .nav-menu {
-        color: white;
+
+
+        z-index: 3;
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 1);
         position: absolute;
         top: 12%;
         left: 0;
