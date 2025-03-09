@@ -1,11 +1,15 @@
-/* Estilos generales */
+/* ---------------------- 
+   ESTILOS GENERALES
+---------------------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #000000;
 }
-
+/* ---------------------- 
+   HEADER
+---------------------- */
 header {
     display: flex;
     justify-content: space-between;
@@ -69,7 +73,7 @@ header nav a {
         position: absolute;
         top: 60px;
         left: 0;
-        padding: 10px 0;
+        padding: 5%;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -111,6 +115,7 @@ header nav a {
 .form-container {
     
     display: flex;
+    padding: 2%;
     justify-content: center;
     align-items: center;
     
@@ -119,7 +124,7 @@ header nav a {
 
 form {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 2%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;

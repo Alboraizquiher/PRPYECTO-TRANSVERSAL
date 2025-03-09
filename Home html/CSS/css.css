@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    
+
     color: #000;
 }
 
@@ -33,26 +33,28 @@ header {
 }
 
 .logo {
-    height: 40px; /* Ajusta el tamaño del logo si lo necesitas */
+    height: 40px;
+    /* Ajusta el tamaño del logo si lo necesitas */
     margin-right: 10px;
 }
 
 header h2 {
     margin: 0;
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 
 /* Menú de navegación */
 
 header nav a {
-    
+
     color: black;
     text-decoration: none;
-    margin:  10px;
-    padding: 10px ;
+    margin: 10px;
+    padding: 10px;
     position: relative;
 
 }
+
 /* Estilos para el botón de menú */
 /* Estilos para el botón de menú */
 .menu-toggle {
@@ -67,23 +69,21 @@ header nav a {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.5em;
-   
+
     top: 20px;
     right: 20px;
 }
 
 .nav-menu {
-   
+
 
     display: flex;
     align-items: center;
-    
+
 }
 
 @media (max-width: 768px) {
     .nav-menu {
-
-
         z-index: 3;
         display: none;
         flex-direction: column;
@@ -92,8 +92,8 @@ header nav a {
         position: absolute;
         top: 12%;
         left: 0;
-        padding: 10px 0;
-        
+        padding: 5%;
+
     }
 
     .nav-menu a {
@@ -103,7 +103,7 @@ header nav a {
         color: #fff;
     }
 
-    .menu-toggle:checked + .menu-icon + .nav-menu {
+    .menu-toggle:checked+.menu-icon+.nav-menu {
         display: flex;
     }
 
@@ -111,9 +111,11 @@ header nav a {
         display: block;
     }
 }
+
 /* Botón rojo en la navegación (HOME) */
 .red-button {
-    background-color: #7e0000; /* Color rojo */
+    background-color: #7e0000;
+    /* Color rojo */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -131,7 +133,8 @@ header nav a {
 ---------------------- */
 .hero {
     position: relative;
-    height: 80vh; /* Ajusta la altura */
+    height: 80vh;
+    /* Ajusta la altura */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +188,8 @@ header nav a {
 ---------------------- */
 .about {
     display: flex;
-    flex-wrap: wrap; /* Para que en pantallas pequeñas se haga responsive */
+    flex-wrap: wrap;
+    /* Para que en pantallas pequeñas se haga responsive */
     align-items: center;
     padding: 40px 20px;
     gap: 20px;
@@ -194,9 +198,10 @@ header nav a {
 }
 
 /* Imagen y texto dentro de .about */
-.about .image, 
+.about .image,
 .about .text {
-    flex: 1 1 300px; /* Se adaptan al ancho disponible */
+    flex: 1 1 300px;
+    /* Se adaptan al ancho disponible */
 }
 
 .about .image img {
@@ -207,7 +212,8 @@ header nav a {
 
 /* Contenedor del texto "SOBRE NOSOTROS" con recuadro rojo */
 .about .text {
-    border: 3px solid #7e0000; /* Borde rojo */
+    border: 3px solid #7e0000;
+    /* Borde rojo */
     padding: 20px;
     border-radius: 10px;
 }
@@ -240,9 +246,11 @@ header nav a {
 /* Contenedor de los miembros del equipo */
 .team-member {
     display: inline-block;
-    width: 250px; /* Ajusta el ancho de la tarjeta */
+    width: 250px;
+    /* Ajusta el ancho de la tarjeta */
     margin: 20px;
-    vertical-align: top; /* Para que las tarjetas queden alineadas en la misma fila */
+    vertical-align: top;
+    /* Para que las tarjetas queden alineadas en la misma fila */
     text-align: center;
 }
 
@@ -294,7 +302,7 @@ h2 {
 .app-download {
     padding: 40px 20px;
     text-align: center;
-    background-color:black;
+    background-color: black;
     color: white;
 }
 
@@ -343,7 +351,8 @@ h2 {
 
 .donde-estamos #map {
     width: 100%;
-    height: 400px; /* Ajusta la altura del mapa */
+    height: 400px;
+    /* Ajusta la altura del mapa */
     border-radius: 10px;
 }
 
