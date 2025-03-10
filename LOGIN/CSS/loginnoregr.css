@@ -1,0 +1,199 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 10px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    background-color: #7e0000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Hero section */
+.hero {
+    background-color: #f2f2f2; /* Fondo gris claro */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10%;
+  
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulario de registro */
+.form-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #ffffff;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form h2 {
+   
+    margin-bottom: 20px;
+}
+.h2prueba{
+    margin-top: 10%;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e0000; /* Fondo rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5e0000;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7e0000; /* Fondo rojo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #5e0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    margin: 10px 0;
+}

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DojoSearch>
+    <Eventos>
+        <Evento id="1">
+            <Nombre>Torneo Internacional de Karate</Nombre>
+            <Fecha>2025-06-15</Fecha>
+            <Ubicacion>
+                <Ciudad>Madrid</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>50</Precio>
+                    <Disponibles>100</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>20</Precio>
+                    <Disponibles>250</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Asociación Española de Karate</Nombre>
+                    <Contacto>karate@dojo.com</Contacto>
+                </Promotor>
+                <Promotor id="2">
+                    <Nombre>Federación de Muay Thai</Nombre>
+                    <Contacto>muaythai@dojo.com</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Marca Deportiva XYZ</Patrocinador>
+        </Evento>
+
+        <Evento id="2">
+            <Nombre>Campeonato de Muay Thai</Nombre>
+            <Fecha>2025-07-20</Fecha>
+            <Ubicacion>
+                <Ciudad>Madrid</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>100</Precio>
+                    <Disponibles>10</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>20</Precio>
+                    <Disponibles>250</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Asociación Española de Karate</Nombre>
+                    <Contacto>karate@dojo.com</Contacto>
+                </Promotor>
+                <Promotor id="2">
+                    <Nombre>Federación de Muay Thai</Nombre>
+                    <Contacto>muaythai@dojo.com</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Gimnasio Elite Fighters</Patrocinador>
+        </Evento>
+        
+        <Evento id="3">
+            <Nombre>Campeonato Nacional de Jiu-Jitsu</Nombre>
+            <Fecha>2025-06-15</Fecha>
+            <Ubicacion>
+                <Ciudad>Barcelona</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>120</Precio>
+                    <Disponibles>15</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>25</Precio>
+                    <Disponibles>300</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Federación Española de Jiu-Jitsu</Nombre>
+                    <Contacto>contacto@jiujitsu.es</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Academia Gracie España</Patrocinador>
+        </Evento>
+
+        <Evento id="4">
+            <Nombre>Torneo Internacional de Taekwondo</Nombre>
+            <Fecha>2025-08-10</Fecha>
+            <Ubicacion>
+                <Ciudad>Sevilla</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>150</Precio>
+                    <Disponibles>20</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>30</Precio>
+                    <Disponibles>400</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Asociación Mundial de Taekwondo</Nombre>
+                    <Contacto>info@taekwondo.org</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Club Taekwondo Sevilla</Patrocinador>
+        </Evento>
+
+        <Evento id="5">
+            <Nombre>Open de Kickboxing</Nombre>
+            <Fecha>2025-09-05</Fecha>
+            <Ubicacion>
+                <Ciudad>Valencia</Ciudad>
+                <Pais>España</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>90</Precio>
+                    <Disponibles>10</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>15</Precio>
+                    <Disponibles>200</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="1">
+                    <Nombre>Federación Española de Kickboxing</Nombre>
+                    <Contacto>contacto@kickboxing.es</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Gimnasio Fighters Pro</Patrocinador>
+        </Evento>
+
+        <Evento id="6">
+            <Nombre>Torneo Internacional de Jiu-Jitsu</Nombre>
+            <Fecha>2025-02-10</Fecha>
+            <Ubicacion>
+                <Ciudad>Río de Janeiro</Ciudad>
+                <Pais>Brasil</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>150</Precio>
+                    <Disponibles>15</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>40</Precio>
+                    <Disponibles>400</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="3">
+                    <Nombre>Confederación Brasileña de Jiu-Jitsu</Nombre>
+                    <Contacto>jiujitsu@cbjj.br</Contacto>
+                </Promotor>
+                <Promotor id="4">
+                    <Nombre>Federación Internacional de Grappling</Nombre>
+                    <Contacto>info@figrappling.org</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>HyperFight Gear</Patrocinador>
+        </Evento>
+
+        <Evento id="7">
+            <Nombre>Abierto de Judo Asia-Pacífico</Nombre>
+            <Fecha>2025-04-05</Fecha>
+            <Ubicacion>
+                <Ciudad>Tokio</Ciudad>
+                <Pais>Japón</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>200</Precio>
+                    <Disponibles>20</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>50</Precio>
+                    <Disponibles>800</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="5">
+                    <Nombre>Asociación Japonesa de Judo</Nombre>
+                    <Contacto>judo@ajj.jp</Contacto>
+                </Promotor>
+                <Promotor id="6">
+                    <Nombre>Comité Olímpico Asiático</Nombre>
+                    <Contacto>coa@juegosasia.org</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Mitsubishi Martial Arts</Patrocinador>
+        </Evento>
+
+        <Evento id="8">
+            <Nombre>Copa Europea de Krav Maga</Nombre>
+            <Fecha>2025-05-18</Fecha>
+            <Ubicacion>
+                <Ciudad>París</Ciudad>
+                <Pais>Francia</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>90</Precio>
+                    <Disponibles>30</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>25</Precio>
+                    <Disponibles>500</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="7">
+                    <Nombre>Federación Europea de Defensa Personal</Nombre>
+                    <Contacto>fedp@security.eu</Contacto>
+                </Promotor>
+                <Promotor id="8">
+                    <Nombre>Academia Internacional Krav Maga</Nombre>
+                    <Contacto>training@kravmaga-world.com</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Urban Security Group</Patrocinador>
+        </Evento>
+        <Evento id="9">
+            <Nombre>Festival Mundial de Capoeira</Nombre>
+            <Fecha>2025-12-12</Fecha>
+            <Ubicacion>
+                <Ciudad>Salvador de Bahía</Ciudad>
+                <Pais>Brasil</Pais>
+            </Ubicacion>
+            <Entradas>
+                <Entrada id="vip">
+                    <Precio>80</Precio>
+                    <Disponibles>50</Disponibles>
+                </Entrada>
+                <Entrada id="normales">
+                    <Precio>15</Precio>
+                    <Disponibles>1000</Disponibles>
+                </Entrada>
+            </Entradas>
+            <Promotores>
+                <Promotor id="39">
+                    <Nombre>Grupo Capoeira Brasil</Nombre>
+                    <Contacto>cultural@capoeirabrasil.org</Contacto>
+                </Promotor>
+                <Promotor id="40">
+                    <Nombre>Ministerio de Cultura Brasileño</Nombre>
+                    <Contacto>patrimonio@cultura.gov.br</Contacto>
+                </Promotor>
+            </Promotores>
+            <Patrocinador>Berimbau Productions</Patrocinador>
+        </Evento>
+    </Eventos>
+</DojoSearch>

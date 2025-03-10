@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+}
+/*LOGO*/
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /*AJUSTAR TAMAÑO DE LOGO*/
+    margin-right: 10px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em; /*AJUSTAR TAMAÑO DE TEXTO*/
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    margin:  10px;
+    padding: 10px ;
+    position: relative;
+}
+/*ESTILOS PARA EL BOTON ROJO*/
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    background-color: #7e0000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5em;
+   
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Botón rojo en la navegación (log in) */
+.red-button {
+    background-color: #7e0000; /* Color rojo */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.red-button:hover {
+    background-color: #5e0000;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f2f2f2; /* Fondo gris claro */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Formulario de registro */
+.form-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #ffffff;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+form h2 {
+   
+    margin-bottom: 20px;
+}
+.h2prueba{
+    margin-top: 10%;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    
+    margin: 10px 0;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e0000; /* Fondo rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5e0000;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7e0000; /* Fondo rojo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #5e0000;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer p {
+    margin: 5px 0;
+}
