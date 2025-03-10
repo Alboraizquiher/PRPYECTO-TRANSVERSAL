@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="/LOGIN/CSS/login.css">
-    
+
 </head>
+
 <body>
     <header>
-        <!--Cabezera-->
-        <div class="logo-container">
-            <img src="/Home html/IMG/logoDS.png" alt="Logo" class="logo">
-            <h2>DojoSearch</h2>
-        </div>
-        <!-- AÑADO BOTON PARA RESPONSIVE-->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav class="nav-menu">
-            <a href="/Home html/HTML/html.html">HOME</a>
-            <a href="#">EVENTOS</a>
-            <a href="#">EQUIPO</a>
-            <a href="#">CONTACTO</a>
-            <a href="/LOGIN/HTML/login.html" class="active">PERFIL</a>
+            <!--Cabezera-->
+            <div class="logo-container">
+                <img src="/Home html/IMG/logoDS.png" alt="Logo" class="logo">
+                <h2>DojoSearch</h2>
+            </div>
+            <!-- AÑADO BOTON PARA RESPONSIVE-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <div class="options">
+                <a href="/Home html/HTML/html.html">HOME</a>
+                <a href="#">EVENTOS</a>
+                <a href="#">EQUIPO</a>
+                <a href="#">CONTACTO</a>
+                <a href="/LOGIN/HTML/login.html" class="active">PERFIL</a>
+            </div>
         </nav>
     </header>
 
@@ -31,7 +35,7 @@
             <h1>Iniciar Sesión</h1>
         </div>
     </section>
-    
+
     <div class="form-container">
         <form action="LOGIN/PHP/login.php" method="POST">
             <input type="text" name="usuario" placeholder="Correo o Teléfono" required>
@@ -47,4 +51,5 @@
     </div>
 
 </body>
+
 </html>
