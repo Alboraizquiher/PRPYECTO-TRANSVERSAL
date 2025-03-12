@@ -16,15 +16,19 @@ body {
 }
 
 /* ---------------------- 
-   HEADER
+   NAVBAR (HEADER)
 ---------------------- */
-header {
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-
-    color: #000;
+    padding: 15px 20px;
+    transition: top 0.3s;
+    z-index: 1000;
 }
 
 .logo-container {
@@ -34,34 +38,40 @@ header {
 
 .logo {
     height: 40px;
-    /* Ajusta el tamaño del logo si lo necesitas */
     margin-right: 10px;
 }
 
-header h2 {
+#navbar h2 {
     margin: 0;
     font-size: 1.5em;
+    color: black;
 }
 
-/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
 
-header nav a {
-
+#navbar a {
     color: black;
     text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-
+    padding: 15px;
+    font-size: 17px;
 }
 
-/* Estilos para el botón de menú */
-/* Estilos para el botón de menú */
+
+#navbar a:hover {
+    background-color: black;
+    opacity: 25%;
+    color: white;
+    border-radius: 5px;
+}
+
 .menu-toggle {
     display: none;
 }
 
-.menu-icon {
+.menu-toggle-label {
     display: none;
     background-color: #7e0000;
     color: #fff;
@@ -69,46 +79,37 @@ header nav a {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.5em;
-
-    top: 20px;
+    position: absolute;
+    top: 15px;
     right: 20px;
 }
 
-.nav-menu {
-
-
-    display: flex;
-    align-items: center;
-
-}
-
 @media (max-width: 768px) {
+    .menu-toggle-label {
+        display: block;
+    }
+
     .nav-menu {
-        z-index: 3;
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 0.9);
         position: absolute;
-        top: 12%;
+        top: 50px;
         left: 0;
-        padding: 5%;
-
+        padding: 10px 0;
     }
 
     .nav-menu a {
-        padding: 10px 20px;
         width: 100%;
-        text-align: left;
+        text-align: center;
+        padding: 10px;
         color: #fff;
-    }
-
-    .menu-toggle:checked+.menu-icon+.nav-menu {
-        display: flex;
-    }
-
-    .menu-icon {
         display: block;
+    }
+
+    .menu-toggle:checked+.menu-toggle-label+.nav-menu {
+        display: flex;
     }
 }
 
