@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    transition: top 0.3s;
+    transition: top 0.5s;
     z-index: 1000;
 }
 
@@ -73,8 +73,8 @@ body {
 
 .menu-toggle-label {
     display: none;
-    background-color: #7e0000;
-    color: #fff;
+    background-color: darkred;
+    color: white;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -85,6 +85,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    #navbar a {
+        color: white;
+        padding: 10px 20px;
+    }
+    
     .menu-toggle-label {
         display: block;
     }
@@ -93,7 +98,8 @@ body {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: black;
+        color: white;
         position: absolute;
         top: 50px;
         left: 0;
@@ -104,7 +110,7 @@ body {
         width: 100%;
         text-align: center;
         padding: 10px;
-        color: #fff;
+        color: white;
         display: block;
     }
 
