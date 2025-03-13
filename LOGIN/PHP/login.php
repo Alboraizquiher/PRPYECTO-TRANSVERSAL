@@ -1,19 +1,16 @@
-
-
 <?php
-$server = '';
-$username = 'root';
-$password = '';
-$db = 'ejemplo';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuario = $_POST['usuario'];
+    $password = $_POST['password'];
 
-$login = new mysqli($server, $username, $password, $db);
-if ($conexion->connect_error) {
-    die('Error en la conexión' . $conexion->connect_error);
-}else{
+    // Credenciales estáticas para la verificación
+    $usuario_correcto = "admin";
+    $password_correcta = "1234";
 
-    echo 'Conexión exitosa';
+    if ($usuario == $usuario_correcto && $password == $password_correcta) {
+        echo "Inicio de sesión exitoso. Bienvenido, $usuario.";
+    } else {
+        echo "Error en el inicio de sesión. Usuario o contraseña incorrectos.";
+    }
 }
-
 ?>
-
- 
