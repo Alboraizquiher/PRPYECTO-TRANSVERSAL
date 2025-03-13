@@ -9,49 +9,123 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="icon" type="image/png" href="/Home html/IMG/logoDS.png" />
 </head>
-
 <body>
+    <header class="header">
   <!--Cabezera-->
-  <div id="navbar">
+
     <div class="logo-container">
       <img src="/Home html/IMG/logoDS.png" alt="Logo" class="logo" />
-        <h2>DojoSearch</h2>
-    </div>
+        <h2 href="/Home html/HTML/html.html">DojoSearch</h2>
+      </div>
+=======
 
-    <div class="team">
-      <!--conoce al equipo (en columnas cada uno del profesor (imagen -> nombre -> informacion))-->
-      <h2>CONECE AL EQUIPO</h2>
-      <!--JAKE SILVA-->
-      <div class="team-member">
-        <img src="/Home html/IMG/Jake.jpg" alt="Jake Silva" />
-        <h3>Jake Silva<br />INSTRUCTOR</h3>
+
+
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-toggle-label">&#9776;</label>
+
+    <nav class="nav-menu">
+      <a href="/Home html/HTML/html.html" class="active">HOME</a>
+      <a href="#">EVENTOS</a>
+      <a href="#">EQUIPO</a>
+      <a href="#">CONTACTO</a>
+      <a href="/LOGIN/HTML/login.html">PERFIL</a>
+    </nav>
+  </div>
+
+
+  <section class="hero">
+    <video id="hero-video" autoplay muted loop>
+      <source src="/Home html/VIDEO/1.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <div class="hero-content">
+      <h1>Dojo Search</h1>
+      <a href="#" class="btn">SIENTE LAS ARTES MARCIALES</a>
+    </div>
+  </section>
+
+  <div class="about">
+    <div class="image">
+      <!--sobre nosotros (imagen al lado derecho -> aplicar flexbox)-->
+      <img src="/Home html/IMG/sobre-nosotros.jpg" alt="foto-inicio" />
+    </div>
+    <div class="text">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>
+        Ayudamos a nuestros clientes a adentrarse en el <br />
+        mundo de las Artes Marciales.
+      </p>
+      <br /><br />
+      <p>
+        Tenemos acceso a los mejores eventos junto a los <br />mejores
+        maestros del momento.
+      </p>
+      <br /><br />
+      <p>
+        Disponemos de muchas disciplinas desde combates cuerpo a <br />cuerpo
+        hasta uso de las técnicas del Ninjitsu.
+      </p>
+    </div>
+  </div>
+
+  <div class="team">
+    <!--conoce al equipo (en columnas cada uno del profesor (imagen -> nombre -> informacion))-->
+    <h2>CONECE AL EQUIPO</h2>
+    <!--JAKE SILVA-->
+    <div class="team-member">
+      <img src="/Home html/IMG/Jake.jpg" alt="Jake Silva" />
+      <h3>Jake Silva<br />INSTRUCTOR</h3>
         
-        <p>
-          Instructor de karate especializado en la enseñanza de katas, kumite y
-          técnicas de defensa personal. Su objetivo es inculcar disciplina,
-          respeto y autocontrol en sus alumnos.
-        </p>
-      </div>
-      <!--TERRI GARNER-->
-      <div class="team-member">
-        <img src="/Home html/IMG/Terri.jpg" alt="Terri Garner" />
-        <h3>Terri Garner<br />INSTRUCTORA</h3>
-        <p>
-          Entrenador especializado en la combinación de varias disciplinas como
-          boxeo, Muay Thai, lucha y Jiu-Jitsu para el combate en jaula. Su
-          enfoque es práctico y orientado a la competencia.
-        </p>
-      </div>
-      <!--SEAN WALTERS-->
-      <div class="team-member">
-        <img src="/Home html/IMG/Sean.jpg" alt="Sean Walters" />
-        <h3>Sean Walters<br />INSTRUCTOR</h3>
-        <p>
-          Instructor de Muay Thai que entrena a sus alumnos en el arte de las
-          ocho extremidades, utilizando golpes de puño, codo, rodilla y pierna
-          en combate.
-        </p>
-      </div>
+      <p>
+        Instructor de karate especializado en la enseñanza de katas, kumite y
+        técnicas de defensa personal. Su objetivo es inculcar disciplina,
+        respeto y autocontrol en sus alumnos.
+      </p>
+    </div>
+    <!--TERRI GARNER-->
+    <div class="team-member">
+      <img src="/Home html/IMG/Terri.jpg" alt="Terri Garner" />
+      <h3>Terri Garner<br />INSTRUCTORA</h3>
+      <p>
+        Entrenador especializado en la combinación de varias disciplinas como
+        boxeo, Muay Thai, lucha y Jiu-Jitsu para el combate en jaula. Su
+        enfoque es práctico y orientado a la competencia.
+      </p>
+    </div>
+    <!--SEAN WALTERS-->
+    <div class="team-member">
+      <img src="/Home html/IMG/Sean.jpg" alt="Sean Walters" />
+      <h3>Sean Walters<br />INSTRUCTOR</h3>
+      <p>
+        Instructor de Muay Thai que entrena a sus alumnos en el arte de las
+        ocho extremidades, utilizando golpes de puño, codo, rodilla y pierna
+        en combate.
+      </p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <!--Contacta con nosotros (imagen de fondo)-->
+
+    <div class="contact-text">
+      <h2>CONTACTA CON NOSOTROS</h2>
+      <br />
+      <p>123-456-7890 | info@mysite.com</p>
+      <br />
+      <p>500 Terry Francine Street, San Francisco, CA 94158</p>
+    </div>
+  </div>
+
+  <div class="app-download">
+
+    <!--descargar aplicacion mobil-->
+    <div>
+
+      <h3>Descarga la aplicación móvil DojoSearch</h3>
+      <p>Mantente actualizado con los mejores eventos de artes marciales.</p>
+      <button>Descargar</button>
     </div>
 
   </div>
