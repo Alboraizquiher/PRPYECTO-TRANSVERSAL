@@ -3,7 +3,6 @@
             -Abril
             -Angelo
             -Albora
-            -Mary-ann
 
 # -------------------------------------
 # Autor: ALBORA IZQUIERDO HERNÁNDEZ 
