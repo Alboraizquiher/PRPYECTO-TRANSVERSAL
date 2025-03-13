@@ -27,7 +27,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+<<<<<<< Updated upstream
     transition: top 0.5s;
+=======
+    transition: top 0.3s;
+>>>>>>> Stashed changes
     z-index: 1000;
 }
 
@@ -85,11 +89,14 @@ body {
 }
 
 @media (max-width: 768px) {
+<<<<<<< Updated upstream
     #navbar a {
         color: white;
         padding: 10px 20px;
     }
     
+=======
+>>>>>>> Stashed changes
     .menu-toggle-label {
         display: block;
     }
@@ -98,8 +105,12 @@ body {
         display: none;
         flex-direction: column;
         width: 100%;
+<<<<<<< Updated upstream
         background-color: black;
         color: white;
+=======
+        background-color: rgba(0, 0, 0, 0.9);
+>>>>>>> Stashed changes
         position: absolute;
         top: 50px;
         left: 0;
@@ -110,7 +121,11 @@ body {
         width: 100%;
         text-align: center;
         padding: 10px;
+<<<<<<< Updated upstream
         color: white;
+=======
+        color: #fff;
+>>>>>>> Stashed changes
         display: block;
     }
 
